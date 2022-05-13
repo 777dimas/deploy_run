@@ -1,3 +1,5 @@
+#!/usr/bin/python2.7
+
 from paramiko import SSHClient
 from paramiko import AutoAddPolicy
 from scp import SCPClient
@@ -19,3 +21,6 @@ for i in lines:
     stdin, stdout, stderr = ssh.exec_command('/usr/bin/pwd')
     print(stdout.read())
     ssh.close()
+
+
+    
