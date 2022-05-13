@@ -21,6 +21,3 @@ for i in lines:
     stdin, stdout, stderr = ssh.exec_command('/usr/bin/pwd')
     print(stdout.read())
     ssh.close()
-
-
-    
